@@ -53,8 +53,8 @@ print('Dict count:', len(all))
 # <key>Track ID</key><integer>369</integer>
 # <key>Name</key><string>Another One Bites The Dust</string>
 # <key>Artist</key><string>Queen</string>
-#找一个信息，其实要先遍历dict子集；找到索引后，返回索引后面一行的信息。
-#如下代码不能理解
+#如果d的某一个成员的tag属性值为“key”（字符串），且它的text属性值等于形参key。
+#那么就会使found=true，在下个循环开始的时候会将下一个d成员的text属性的值作为返回值。如果一直不存在匹配，则遍历完d的所有成员后返回None。
 def lookup(d, key):
     found = False
     for child in d:
